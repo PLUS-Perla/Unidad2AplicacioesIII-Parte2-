@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.utng.edu.cotizacion.Cotizacion"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50pt"
+                android:text="@string/posada_bonita"
+                android:textSize="11pt" />
+
+
+
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="-250dp"
+                android:text="@string/txv_entrada"
+                android:textSize="10pt"
+                />
+
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"></CalendarView>
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:layout_marginLeft="-380dp"
+                android:text="@string/txv_salida"
+                android:textSize="10pt"
+                />
+
+            <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="440dp"></CalendarView>
+
+            <TextView
+                android:layout_width="87pt"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-310dp"
+                android:layout_marginTop="360pt"
+                android:text="Tipo de Habitación"
+                android:textSize="10pt"
+
+                android:id="@+id/txv_tipo"
+
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/CmbOpciones"
+                android:layout_marginTop="365pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="-200dp"/>
+
+            <TextView
+                android:layout_width="87pt"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-310dp"
+                android:layout_marginTop="380pt"
+                android:text="Personas"
+                android:textSize="@dimen/title2"
+                android:textColor="@color/black"/>
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-90pt"
+                android:layout_marginTop="400pt" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-15pt"
+                android:layout_marginTop="420pt" />
+
+            <TextView
+                android:layout_width="87pt"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="400pt"
+                android:text="@string/adult"
+                android:textSize="@dimen/title3"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-190dp"
+                android:layout_marginTop="420pt"
+                android:text="@string/boys"
+                android:textSize="@dimen/title3"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="50pt"
+                android:layout_height="20pt"
+                android:text="@string/txv_continuer"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="450pt"
+                android:background="@color/orange"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

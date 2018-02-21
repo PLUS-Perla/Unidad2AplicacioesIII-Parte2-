@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/size_margin"
+        android:stretchColumns="5"
+        android:gravity="center"
+        android:layout_marginTop="2pt">
+
+        <TableRow   android:layout_marginTop="-40pt">
+            <TextView
+                android:id="@+id/titulo_gestion_clientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:textSize="@dimen/title"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="5pt"
+                android:layout_span="6"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/orange"
+            android:layout_marginBottom="@dimen/size_margin"
+            >
+
+            <TextView
+                android:id="@+id/id_titulo_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:padding="10dip"
+                android:background="#FDEBD0"
+                />
+
+            <TextView
+                android:id="@+id/nombre_titulo_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Cliente "
+                android:padding="9dip"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:background="#FDEBD0"/>
+
+            <TextView
+                android:id="@+id/email_titulo_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email                   "
+                android:padding="9dip"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:background="#FDEBD0"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/total_reservaciones_titulo_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FDEBD0"
+                android:gravity="center"
+                android:padding="9dip"
+                android:text="Reservaciones"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/operaciones_titulo_cliente"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:background="#FDEBD0"
+                android:gravity="center"
+                android:padding="9dip"
+                android:text="Operaciones"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-9pt">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C-01" />
+            <TextView
+                android:id="@+id/cliente_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ricardo Gonzalez" />
+            <TextView
+                android:id="@+id/nombre_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="riqg12@gmail.com" />
+            <TextView
+                android:id="@+id/email_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2" />
+            <TextView
+                android:id="@+id/edit_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Edit"
+                android:layout_marginLeft="25pt"/>
+            />
+
+            <ImageButton
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginTop="-2pt"
+                android:src="@drawable/editar"
+                android:contentDescription="Editar"
+                android:id="@+id/btn_edit_servicio"
+                android:onClick="nextActivity"/>
+
+            <TextView
+                android:id="@+id/delete_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Delete" />
+            />
+
+            <ImageButton
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginTop="-2pt"
+                android:src="@drawable/borrar"
+                android:contentDescription="Eliminar"
+                android:id="@+id/btn_delete_servicio"/>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
